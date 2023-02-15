@@ -36,12 +36,12 @@ def main():
     if "I" in command:
         text = input()
     elif "F" in command:
+        # path = Path.cwd()
+
         print("Ievadiet testa faila nosaukumu: ")
-        fileNumber = input()
-        file1 = "txt"
-        file2 = "."
-        fileName = "\\test\\" + fileNumber + file2 + file1
-        file = open(fileName, "r")
+        fileName = input()
+        filePath = "test/" + fileName
+        file = open(filePath, "r")
         text = file.read()
     else:
         print("Error")
